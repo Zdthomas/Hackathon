@@ -27,14 +27,22 @@ function randomWord () {
 function generateButtons() {
 
     let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter => 
+
         `
         <button 
+
             class="btn btn-lg btn-primary m-2"
+
             id='` + letter + `'
+
             onClick="guessedLetter('` + letter + `')"
+
         >
+
             ` + letter + `
+
         </button>    
+
         `).join('');
 
     document.getElementById('keyboard').innerHTML = buttonsHTML
@@ -110,23 +118,25 @@ function guessedWord() {
 
 function reset() {
 
-lives = 5;
+    lives = 5;
 
-guessed = [];
+    guessed = [];
 
 
-randomWord();
+    randomWord();
 
-guessedWord();
+    guessedWord();
 
-updateLives();
+    updateLives();
 
-generateButtons();
+    generateButtons();
 
 }
 
 randomWord();
+
 generateButtons();
+
 guessedWord();
 
 
