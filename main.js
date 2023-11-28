@@ -20,6 +20,8 @@ function randomWord () {
 
     alert(answer)
 
+    // To Do: Have hints tied to the answer
+
 }
 
 function generateButtons() {
