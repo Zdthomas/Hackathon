@@ -27,7 +27,7 @@ function randomWord () {
 function generateButtons() {
 
     let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter => 
-
+        
         `
         <button 
 
@@ -41,9 +41,7 @@ function generateButtons() {
 
             ` + letter + `
 
-        </button>    
-
-        `).join('');
+        </button>`).join('');
 
     document.getElementById('keyboard').innerHTML = buttonsHTML
 }
